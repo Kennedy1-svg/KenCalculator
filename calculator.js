@@ -38,10 +38,10 @@ function del(){
 }
 
 
-const theme= localStorage.getItem('theme')
-
 
 const defaultTheme = () =>{
+    localStorage.setItem("theme", "light")
+    const theme= localStorage.getItem('theme')
     if (theme === 'light'){
         body.classList.remove("theme2")
         body.classList.remove("theme3")
